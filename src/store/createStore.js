@@ -3,12 +3,14 @@ import thunk from 'redux-thunk'
 import { browserHistory } from 'react-router'
 import makeRootReducer from './reducers'
 import { updateLocation } from './location'
+import  * as fromApi from 'api'
 
 export default (initialState = {}) => {
   // ======================================================
   // Middleware Configuration
   // ======================================================
-  const middleware = [thunk]
+  const thunkWithApi = thunk.withExtraArgument(fromApi)
+  const middleware = [thunkWithApi]
 
   // ======================================================
   // Store Enhancers
