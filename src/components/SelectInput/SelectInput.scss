@@ -1,0 +1,104 @@
+.SelectInput {
+    position: relative;
+    
+    .dropdown {
+        // position an rect
+        position: absolute;
+        width: 100%;
+
+        // styling
+        padding-bottom: 5px;
+        border-radius: 0 0 5px 5px;
+        border: 1px solid lightgray;
+        border-top: none;
+        box-shadow: 0px 0px 10px lightgrey;
+        background: white;
+        z-index: 5;
+        max-height: 300px;
+        overflow: scroll;
+    }
+
+    .dropdownItem {
+        // position and rect
+        padding: 10px;
+        position: relative;
+
+        // styling
+        cursor: pointer;
+    }
+
+    .leftSideItem {
+        // position and rect
+        position: absolute;
+        left: 20px;
+        top: 8px;
+
+        //styling
+    }
+
+    .dropdownItem:hover {
+        background: lightgrey;
+    }
+
+    .clearButton {
+        // position an rect
+        position: absolute;
+        padding: 5px;
+        top: 2px;
+        right: 17px;
+
+        // styling
+        font-size: 20px;
+        cursor: pointer;
+        // color: var(--form-border-bottom-color);
+        color: #DDD;
+    }
+
+    .clearButton:hover {
+        // color: var(--form-active-color);
+        color: #B52556;
+    }
+
+    .dropdownButton {
+        // position an rect
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 0; 
+        height: 0; 
+
+        // styling
+        pointer-events: none;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        
+        // border-top: 10px solid var(--form-border-bottom-color);
+        border-top: 10px solid #DDD;
+    }
+
+    .activeDropdownButton {
+        // position an rect
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 0; 
+        height: 0; 
+
+        // styling
+        pointer-events: none;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        
+        // border-top: 10px solid var(--form-active-color);
+        border-top: 10px solid #B52556;
+    }
+
+    // hide blinking cursor
+    input[type="text"]{
+        color : transparent;
+        text-shadow : 0 0 0 #000;
+    }
+    input[type="text"]:focus{
+        outline : none;
+    }
+}

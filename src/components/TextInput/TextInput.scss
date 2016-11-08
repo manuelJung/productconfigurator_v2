@@ -1,0 +1,77 @@
+.TextInput {
+    // position and rect
+    position: relative;
+    padding: 0;
+    margin: 0;
+    // margin-top: 5px;
+
+    //styling
+    border: none;
+    overflow: visible;
+}
+
+.TextInput input {
+    // position and rect
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 10px 8px;
+
+    //styling
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    // border-bottom: 1px solid var(--form-border-bottom-color);
+    border-bottom: 1px solid #DDD;
+    font-size: 120%;
+    outline: none;
+    cursor: text;
+
+}
+
+.TextInput hr {
+    // position and rect
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 2px;
+
+    //styling
+    border: none;
+    // background: var(--form-active-color);
+    background: #B52556;
+    font-size: 1px;
+    z-index: 10;
+}
+
+.TextInput label {
+    // position and rect
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    pointer-events: none;
+
+    //styling
+    // color: var(--form-text-color);
+    color: black;
+    font-family: Roboto,sans-serif;
+    font-weight: normal;
+}
+
+/*
+ * Events
+ */
+
+.TextInput input::-webkit-input-placeholder {
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
+}
+
+.TextInput input:not(:focus)::-webkit-input-placeholder {
+    color: transparent;
+}

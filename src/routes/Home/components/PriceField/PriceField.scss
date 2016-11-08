@@ -1,0 +1,30 @@
+.PriceField {
+    margin-bottom: 10px;
+}
+
+.headlineWrapper {
+    background: lightgray;
+    text-align: center;
+    color: black;
+}
+
+.headlineWrapper h3 {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.text {
+    padding: 10px;   
+    background: #f9f9f9;
+    margin-top: -16px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+.price {
+    margin-left: 75px;
+    border-bottom: 1px dotted black;
+    font-weight: 400;
+}

@@ -1,0 +1,34 @@
+.form {
+    
+    .details-text{
+        margin-bottom: 30px;
+    }
+
+    .details-customizing {
+        margin-bottom: 20px;
+    }
+
+    .details-user {
+        margin-bottom: 0px;
+    }
+
+    .submitButton{
+        padding: 10px;
+        width: 300px;
+        float: right;
+        margin: 20px;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        z-index: 1;
+        display: block;
+        overflow: hidden;
+        // background: var(--form-active-color);
+        background: #B52556;
+        // color: var(--form-submit-color);
+        color: white;
+        font: 14px/1.21 Roboto, 'Helvetica Neue', arial, helvetica, sans-serif;
+        border-style: none;
+        border-color: none;
+    }
+}
